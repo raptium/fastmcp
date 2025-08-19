@@ -355,4 +355,6 @@ def create_streamable_http_app(
 
     app.state.path = streamable_http_path
 
+    app.state.session_manager = session_manager
+
     return app
