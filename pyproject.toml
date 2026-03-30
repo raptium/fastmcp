@@ -1,6 +1,6 @@
 [project]
 name = "fastmcp"
-dynamic = ["version"]
+version = "3.1.1.post1"
 description = "The fast, Pythonic way to build MCP servers and clients."
 authors = [{ name = "Jeremiah Lowin" }]
 dependencies = [
@@ -99,21 +99,11 @@ Repository = "https://github.com/PrefectHQ/fastmcp"
 Documentation = "https://gofastmcp.com"
 
 [build-system]
-requires = ["hatchling", "uv-dynamic-versioning>=0.7.0"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.hatch.version]
-source = "uv-dynamic-versioning"
 
 [tool.hatch.metadata]
 allow-direct-references = true
-
-
-[tool.uv-dynamic-versioning]
-vcs = "git"
-style = "pep440"
-bump = true
-fallback-version = "3.1.1"
 
 
 [tool.pytest.ini_options]
