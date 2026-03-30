@@ -101,7 +101,7 @@ allow-direct-references = true
 vcs = "git"
 style = "pep440"
 bump = true
-fallback-version = "0.0.0"
+fallback-version = "2.14.6"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
